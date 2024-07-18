@@ -42,7 +42,7 @@ export class TicketService {
   }
 
   async update(id: number, updateTicketDto: Partial<Ticket>): Promise<Ticket> {
-    console.log('ssd')
+    // console.log('ssd')
     const ticket = await this.findOne(id);
 
     Object.assign(ticket, updateTicketDto);

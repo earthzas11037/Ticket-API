@@ -23,7 +23,7 @@ export class AuthMiddleware implements NestMiddleware {
     const token = authHeader.substring(7);
     const key = process.env.API_KEY
     if (!!key && token != key) {
-      console.log('bearerToken is not Pass')
+      // console.log('bearerToken is not Pass')
       return res.status(HttpStatus.UNAUTHORIZED).json({
         message: 'unauthorized',
         status: 401,

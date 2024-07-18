@@ -49,7 +49,7 @@ export class TicketController {
       ticket.description = createTicketDto.description;
       ticket.contact = createTicketDto.contact;
       ticket.status = createTicketDto.status;
-      console.log(ticket)
+      // console.log(ticket)
       const result = await this.ticketService.create(ticket);
 
       res.status(HttpStatus.OK).json(result);
