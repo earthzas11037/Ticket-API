@@ -6,3 +6,5 @@ How to run
 4. Run script sql in file src/scripts/initial-database.sql
 
 Already to use...
+
+Swagger run on http://localhost:5000/api-docs#/
